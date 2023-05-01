@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-	.nav-active {
-		@apply bg-sky-500 text-white font-semibold;
-	}
+.nav-active {
+	@apply bg-sky-500 text-white font-semibold;
 }
