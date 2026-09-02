@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #4648D4;
+  --color-primary-hover: #3537af;
+  --color-primary-active: #30329c;
+  --color-heading: #0B1C30;
+  --color-body: #545F73;
+  --color-dark: #213145;
+  --color-background-secondary: #EFF4FF;
+  --color-background-tertiary: #F1F5F9;
+  --color-card-stroke: #E2E8F0;
+  --font-nunito: "Nunito", sans-serif;
+}
+
+nav .nav-links {
+  @apply hidden sm:flex;
+}
+
+nav.show .nav-links {
+  @apply flex;
+}
+
+nav .nav-action {
+  @apply hidden sm:block;
+}
+
+nav.show .nav-action {
+  @apply block;
+}
+
+[animate-inview=fade-left],
+[animate-inview=fade-right],
+[animate-inview=fade-down] {
+  @apply opacity-0;
+}
+
+[animate-inview=scale-bottom] {
+  transform-origin: bottom;
+}
